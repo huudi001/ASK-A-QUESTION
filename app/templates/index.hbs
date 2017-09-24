@@ -1,1 +1,13 @@
-{{outlet}}
+<div class="row">
+  <div class="col-md-8">
+    <h2> Ask a question of intrest! </h2>
+    {{#each model.questions as |question|}}
+      {{#link-to 'question' question.id}}<h4>{{question.title}}</h4>{{/link-to}}
+      <small>by {{question.author}}</small>
+      <hr>
+    {{/each}}
+  </div>
+  <div class="col-md-4" id="newQuestion">
+    {{new-question saveQuestion="saveQuestion"}}
+  </div>
+</div>

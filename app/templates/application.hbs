@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<header>
+  <div class="nav">
+    <ul>
+      <li class="home">{{#link-to 'index'}}Home{{/link-to}}</li>
+      <li class="about">{{#link-to 'about'}}About{{/link-to}}</li>
+    </ul>
+  </div>
+</header>
+<div class="well">
+  <p id="headerTitle">Questionare</p>
+</div>
+<div class="container">
+  {{outlet}}
+</div>
+<footer>
+  <div class="copyright">
+    <p>© 2017 - Khalid Hashi</p>
+  </div>
