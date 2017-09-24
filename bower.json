@@ -1,0 +1,17 @@
+{
+  "name": "ask-a-question",
+  "description": "Small description for ask-a-question goes here",
+  "main": "",
+  "authors": [
+    "khalid hassan <abuuanas30@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
